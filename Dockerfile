@@ -17,7 +17,7 @@ RUN bash makefish.sh
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
-RUN chmod +x stockfish_x64_modern
+RUN chmod +x stockfish_x64_avx2
 # Engine name is here ^^^^^^
 
 CMD python3 run.py
